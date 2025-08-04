@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="سبد خرید Persian Metal Art - مشاهده و مدیریت محصولات انتخابی شما">
+    <meta name="keywords" content="سبد خرید، خرید آنلاین، Persian Metal Art">
+    <title>سبد خرید - Persian Metal Art</title>
+    
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- هدر اصلی -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="لوگو Persian Metal Art" class="logo-img">
+                    <h1>Persian Metal Art</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="contact.html">تماس با ما</a></li>
+                    <li><a href="cart.html" class="active">سبد خرید (<span id="cart-count">3</span>)</a></li>
+                    <li class="user-menu">
+                        <div class="user-dropdown">
+                            <button class="user-btn" id="userBtn">
+                                <span id="userDisplayName">ورود / ثبت نام</span>
+                                <span class="user-icon">👤</span>
+                            </button>
+                            <div class="user-dropdown-content" id="userDropdown">
+                                <a href="login.html" id="loginLink">ورود به حساب</a>
+                                <a href="register.html">ثبت نام</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- بخش هدر صفحه سبد خرید -->
+    <section class="page-header compact">
+        <div class="container">
+            <h1>سبد خرید شما</h1>
+            <p>محصولات انتخابی شما برای خرید</p>
+        </div>
+    </section>
+
+    <!-- بخش سبد خرید -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-container">
+                <!-- لیست محصولات سبد خرید -->
+                <div class="cart-items">
+                    <h2>محصولات سبد خرید</h2>
+                    
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="images/products/product1.jpg" alt="مجسمه فلزی سنتی ایرانی">
+                        </div>
+                        <div class="item-details">
+                            <h3>مجسمه فلزی سنتی ایرانی</h3>
+                            <p class="item-category">دسته‌بندی: مجسمه‌ها</p>
+                            <div class="item-options">
+                                <span class="option">رنگ: طلایی</span>
+                                <span class="option">تعداد: 1</span>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-original">۳,۰۰۰,۰۰۰ تومان</div>
+                            <div class="price-discounted">۲,۵۰۰,۰۰۰ تومان</div>
+                            <div class="discount-badge">۱۷٪ تخفیف</div>
+                        </div>
+                        <div class="item-actions">
+                            <div class="quantity-control">
+                                <button class="qty-btn decrease">-</button>
+                                <input type="number" value="1" min="1" max="5" class="qty-input">
+                                <button class="qty-btn increase">+</button>
+                            </div>
+                            <button class="remove-item">حذف</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="images/products/product2.jpg" alt="ظرف تزئینی مسی">
+                        </div>
+                        <div class="item-details">
+                            <h3>ظرف تزئینی مسی</h3>
+                            <p class="item-category">دسته‌بندی: ظرف‌ها</p>
+                            <div class="item-options">
+                                <span class="option">رنگ: مسی</span>
+                                <span class="option">تعداد: 2</span>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-original">۲,۰۰۰,۰۰۰ تومان</div>
+                            <div class="price-discounted">۱,۸۰۰,۰۰۰ تومان</div>
+                            <div class="discount-badge">۱۰٪ تخفیف</div>
+                        </div>
+                        <div class="item-actions">
+                            <div class="quantity-control">
+                                <button class="qty-btn decrease">-</button>
+                                <input type="number" value="2" min="1" max="5" class="qty-input">
+                                <button class="qty-btn increase">+</button>
+                            </div>
+                            <button class="remove-item">حذف</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="images/products/product3.jpg" alt="آینه فلزی تزئینی">
+                        </div>
+                        <div class="item-details">
+                            <h3>آینه فلزی تزئینی</h3>
+                            <p class="item-category">دسته‌بندی: آینه‌ها</p>
+                            <div class="item-options">
+                                <span class="option">رنگ: نقره‌ای</span>
+                                <span class="option">تعداد: 1</span>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-discounted">۳,۲۰۰,۰۰۰ تومان</div>
+                        </div>
+                        <div class="item-actions">
+                            <div class="quantity-control">
+                                <button class="qty-btn decrease">-</button>
+                                <input type="number" value="1" min="1" max="5" class="qty-input">
+                                <button class="qty-btn increase">+</button>
+                            </div>
+                            <button class="remove-item">حذف</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- خلاصه سفارش -->
+                <div class="cart-summary">
+                    <div class="summary-box">
+                        <h3>خلاصه سفارش</h3>
+                        
+                        <div class="summary-item">
+                            <span>جمع کل محصولات:</span>
+                            <span>۸,۸۰۰,۰۰۰ تومان</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span>تخفیف:</span>
+                            <span class="discount-amount">-۵۰۰,۰۰۰ تومان</span>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <span>هزینه ارسال:</span>
+                            <span>۱۵۰,۰۰۰ تومان</span>
+                        </div>
+                        
+                        <div class="summary-item total">
+                            <span>جمع کل:</span>
+                            <span class="total-amount">۸,۴۵۰,۰۰۰ تومان</span>
+                        </div>
+                        
+                        <div class="promo-code">
+                            <input type="text" placeholder="کد تخفیف" class="promo-input">
+                            <button class="apply-promo">اعمال</button>
+                        </div>
+                        
+                        <button class="checkout-btn">تکمیل سفارش</button>
+                        
+                        <div class="continue-shopping">
+                            <a href="products.html">← ادامه خرید</a>
+                        </div>
+                    </div>
+                    
+                    <div class="shipping-info">
+                        <h4>اطلاعات ارسال</h4>
+                        <p>ارسال رایگان برای سفارشات بالای ۸ میلیون تومان</p>
+                        <p>زمان تحویل: ۳-۵ روز کاری</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- پیشنهادات ویژه -->
+            <div class="cart-recommendations">
+                <h2>پیشنهادات ویژه برای شما</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="images/products/recommended1.jpg" alt="مجسمه اسب فلزی">
+                        <h3>مجسمه اسب فلزی</h3>
+                        <p class="price">۴,۵۰۰,۰۰۰ تومان</p>
+                        <button class="add-to-cart">افزودن به سبد</button>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="images/products/recommended2.jpg" alt="ظرف گل فلزی">
+                        <h3>ظرف گل فلزی</h3>
+                        <p class="price">۱,۲۰۰,۰۰۰ تومان</p>
+                        <button class="add-to-cart">افزودن به سبد</button>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="images/products/recommended3.jpg" alt="آینه دیواری فلزی">
+                        <h3>آینه دیواری فلزی</h3>
+                        <p class="price">۲,۸۰۰,۰۰۰ تومان</p>
+                        <button class="add-to-cart">افزودن به سبد</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Persian Metal Art</h3>
+                    <p>فروشگاه تخصصی هنرهای فلزی ایرانی با بیش از ۷ سال سابقه هنری و صنعتی</p>
+                </div>
+                <div class="footer-section">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links-center">
+                        <li><a href="index.html">خانه</a></li>
+                        <li><a href="products.html">محصولات</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <p>تلفن: ۰۹۰۲-۹۶۴۴۰۵۲</p>
+                    <p>ایمیل: persianmetalart@gmail.com</p>
+                    <p>آدرس: لرستان، دورود</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Persian Metal Art. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="محصولات Persian Metal Art - مجسمه‌های فلزی، ظروف تزئینی، آثار هنری فلزی ایرانی">
+    <meta name="keywords" content="محصولات فلزی، مجسمه فلزی، ظروف مسی، هنر فلزی ایرانی">
+    <title>محصولات - Persian Metal Art</title>
+    
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- هدر اصلی -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="لوگو Persian Metal Art" class="logo-img">
+                    <h1>Persian Metal Art</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html" class="active">محصولات</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="contact.html">تماس با ما</a></li>
+                    <li><a href="cart.html">سبد خرید (<span id="cart-count">0</span>)</a></li>
+                    <li class="user-menu">
+                        <div class="user-dropdown">
+                            <button class="user-btn" id="userBtn">
+                                <span id="userDisplayName">ورود / ثبت نام</span>
+                                <span class="user-icon">👤</span>
+                            </button>
+                            <div class="user-dropdown-content" id="userDropdown">
+                                <a href="login.html" id="loginLink">ورود به حساب</a>
+                                <a href="register.html">ثبت نام</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- بخش هدر صفحه محصولات -->
+    <section class="page-header compact">
+        <div class="container">
+            <h1>محصولات ما</h1>
+            <p>مجموعه‌ای از زیباترین آثار هنر فلزی ایرانی</p>
+        </div>
+    </section>
+
+    <!-- بخش فیلتر محصولات -->
+    <section class="products-filter">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="category">دسته‌بندی:</label>
+                    <select id="category">
+                        <option value="all">همه محصولات</option>
+                        <option value="sculpture">مجسمه‌ها</option>
+                        <option value="vase">ظرف‌ها</option>
+                        <option value="mirror">آینه‌ها</option>
+                        <option value="decoration">تزئینات</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-range">محدوده قیمت:</label>
+                    <select id="price-range">
+                        <option value="all">همه قیمت‌ها</option>
+                        <option value="0-1000000">تا ۱,۰۰۰,۰۰۰ تومان</option>
+                        <option value="1000000-3000000">۱,۰۰۰,۰۰۰ تا ۳,۰۰۰,۰۰۰ تومان</option>
+                        <option value="3000000-5000000">۳,۰۰۰,۰۰۰ تا ۵,۰۰۰,۰۰۰ تومان</option>
+                        <option value="5000000+">بالای ۵,۰۰۰,۰۰۰ تومان</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sort">مرتب‌سازی:</label>
+                    <select id="sort">
+                        <option value="newest">جدیدترین</option>
+                        <option value="popular">محبوب‌ترین</option>
+                        <option value="price-low">ارزان‌ترین</option>
+                        <option value="price-high">گران‌ترین</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش بنر تبلیغاتی -->
+    <section class="products-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h2>محصولات ویژه هفته</h2>
+                <p>تا ۳۰٪ تخفیف روی محصولات انتخابی</p>
+                <button class="banner-button">مشاهده پیشنهادات</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش دسته‌بندی‌های ویژه -->
+    <section class="categories-section">
+        <div class="container">
+            <h2>دسته‌بندی‌های محصولات</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="images/categories/sculpture.jpg" alt="ظروف برجسته">
+                    <div class="category-overlay">
+                        <h3>ظروف برجسته</h3>
+                        <p>۱۵ محصول</p>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="images/categories/vase.jpg" alt="بشقاب ها">
+                    <div class="category-overlay">
+                        <h3>بشقاب ها</h3>
+                        <p>۲۳ محصول</p>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="images/categories/mirror.jpg" alt="آینه‌ها">
+                    <div class="category-overlay">
+                        <h3>آینه‌ها</h3>
+                        <p>۱۲ محصول</p>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <img src="images/categories/decoration.jpg" alt="قاب ها">
+                    <div class="category-overlay">
+                        <h3>قاب ها</h3>
+                        <p>۳۰ محصول</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- فوتر - مشترک برای همه صفحات -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Persian Metal Art</h3>
+                <p>فروشگاه تخصصی هنرهای فلزی ایرانی با بیش از ۷ سال سابقه هنری و صنعتی</p>
+            </div>
+            <div class="footer-section">
+                <h3>لینک‌های سریع</h3>
+                <ul class="footer-links-center">
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="contact.html">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>تماس با ما</h3>
+                <p>تلفن: ۰۹۰۲-۹۶۴۴۰۵۲</p>
+                <p>ایمیل: persianmetalart@gmail.com</p>
+                <p>آدرس: لرستان، دورود</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Persian Metal Art. تمامی حقوق محفوظ است.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

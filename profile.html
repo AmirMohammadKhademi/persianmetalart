@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="پروفایل کاربری - Persian Metal Art">
+    <meta name="keywords" content="پروفایل، حساب کاربری، Persian Metal Art">
+    <title>پروفایل کاربری - Persian Metal Art</title>
+    
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- هدر اصلی -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="لوگو Persian Metal Art" class="logo-img">
+                    <h1>Persian Metal Art</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="categories.html">دسته‌بندی‌ها</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="contact.html">تماس با ما</a></li>
+                    <li><a href="cart.html">سبد خرید (<span id="cart-count">0</span>)</a></li>
+                    <li class="user-menu">
+                        <div class="user-dropdown">
+                            <button class="user-btn" id="userBtn">
+                                <span id="userDisplayName">علی رضایی</span>
+                                <span class="user-icon">👤</span>
+                            </button>
+                            <div class="user-dropdown-content" id="userDropdown">
+                                <a href="profile.html" id="profileLink">پروفایل</a>
+                                <a href="#" id="logoutLink">خروج</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- بخش هدر صفحه پروفایل -->
+    <section class="page-header compact">
+        <div class="container">
+            <h1>پروفایل کاربری</h1>
+            <p>خوش آمدید، علی رضایی عزیز</p>
+        </div>
+    </section>
+
+    <!-- بخش اصلی پروفایل -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-container">
+                <!-- منوی کناری -->
+                <div class="profile-sidebar">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <img src="images/profile/default-avatar.png" alt="آواتار کاربر">
+                            <button class="edit-avatar" title="تغییر آواتار">✏️</button>
+                        </div>
+                        <h3>amirmohammad</h3>
+                        <p class="user-email">amir.m</p>
+                        <p class="member-since">عضو از: ۱۴۰۲/۰۳/۱۵</p>
+                    </div>
+                    
+                    <nav class="profile-nav">
+                        <ul>
+                            <li><a href="#" class="active" data-tab="dashboard">داشبورد</a></li>
+                            <li><a href="#" data-tab="orders">سفارش‌ها</a></li>
+                            <li><a href="#" data-tab="wishlist">علاقه‌مندی‌ها</a></li>
+                            <li><a href="#" data-tab="addresses">آدرس‌ها</a></li>
+                            <li><a href="#" data-tab="settings">تنظیمات حساب</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- محتوای اصلی -->
+                <div class="profile-content">
+                    <!-- تب داشبورد -->
+                    <div class="profile-tab active" id="dashboard-tab">
+                        <h2>داشبورد</h2>
+                        
+                        <div class="dashboard-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">📦</div>
+                                <div class="stat-info">
+                                    <div class="stat-number">۱۲</div>
+                                    <div class="stat-label">سفارش کل</div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">❤️</div>
+                                <div class="stat-info">
+                                    <div class="stat-number">۸</div>
+                                    <div class="stat-label">علاقه‌مندی‌ها</div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">🚚</div>
+                                <div class="stat-info">
+                                    <div class="stat-number">۳</div>
+                                    <div class="stat-label">سفارش در حال ارسال</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-orders">
+                            <h3>سفارش‌های اخیر</h3>
+                            <div class="orders-list">
+                                <div class="order-item">
+                                    <div class="order-info">
+                                        <div class="order-number">#PM-2024-0015</div>
+                                        <div class="order-date">۱۴۰۳/۰۲/۲۰</div>
+                                    </div>
+                                    <div class="order-status pending">در حال پردازش</div>
+                                    <div class="order-total">۲,۵۰۰,۰۰۰ تومان</div>
+                                </div>
+                                
+                                <div class="order-item">
+                                    <div class="order-info">
+                                        <div class="order-number">#PM-2024-0014</div>
+                                        <div class="order-date">۱۴۰۳/۰۲/۱۸</div>
+                                    </div>
+                                    <div class="order-status shipped">ارسال شده</div>
+                                    <div class="order-total">۱,۸۰۰,۰۰۰ تومان</div>
+                                </div>
+                                
+                                <div class="order-item">
+                                    <div class="order-info">
+                                        <div class="order-number">#PM-2024-0013</div>
+                                        <div class="order-date">۱۴۰۳/۰۲/۱۵</div>
+                                    </div>
+                                    <div class="order-status delivered">تحویل داده شده</div>
+                                    <div class="order-total">۳,۲۰۰,۰۰۰ تومان</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- تب سفارش‌ها -->
+                    <div class="profile-tab" id="orders-tab">
+                        <h2>سفارش‌های من</h2>
+                        
+                        <div class="orders-filter">
+                            <select>
+                                <option>همه سفارش‌ها</option>
+                                <option>در حال پردازش</option>
+                                <option>ارسال شده</option>
+                                <option>تحویل داده شده</option>
+                                <option>لغو شده</option>
+                            </select>
+                        </div>
+                        
+                        <div class="orders-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>شماره سفارش</th>
+                                        <th>تاریخ</th>
+                                        <th>مبلغ کل</th>
+                                        <th>وضعیت</th>
+                                        <th>عملیات</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#PM-2024-0015</td>
+                                        <td>۱۴۰۳/۰۲/۲۰</td>
+                                        <td>۲,۵۰۰,۰۰۰ تومان</td>
+                                        <td><span class="status pending">در حال پردازش</span></td>
+                                        <td><button class="view-order">مشاهده جزئیات</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#PM-2024-0014</td>
+                                        <td>۱۴۰۳/۰۲/۱۸</td>
+                                        <td>۱,۸۰۰,۰۰۰ تومان</td>
+                                        <td><span class="status shipped">ارسال شده</span></td>
+                                        <td><button class="view-order">مشاهده جزئیات</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#PM-2024-0013</td>
+                                        <td>۱۴۰۳/۰۲/۱۵</td>
+                                        <td>۳,۲۰۰,۰۰۰ تومان</td>
+                                        <td><span class="status delivered">تحویل داده شده</span></td>
+                                        <td><button class="view-order">مشاهده جزئیات</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#PM-2024-0012</td>
+                                        <td>۱۴۰۳/۰۲/۱۰</td>
+                                        <td>۴,۵۰۰,۰۰۰ تومان</td>
+                                        <td><span class="status delivered">تحویل داده شده</span></td>
+                                        <td><button class="view-order">مشاهده جزئیات</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- تب علاقه‌مندی‌ها -->
+                    <div class="profile-tab" id="wishlist-tab">
+                        <h2>علاقه‌مندی‌های من</h2>
+                        
+                        <div class="wishlist-items">
+                            <div class="product-card">
+                                <img src="images/products/product4.jpg" alt="مجسمه اسب فلزی">
+                                <h3>مجسمه اسب فلزی</h3>
+                                <p class="price">۴,۵۰۰,۰۰۰ تومان</p>
+                                <div class="wishlist-actions">
+                                    <button class="add-to-cart">افزودن به سبد</button>
+                                    <button class="remove-wishlist">حذف</button>
+                                </div>
+                            </div>
+                            
+                            <div class="product-card">
+                                <img src="images/products/product5.jpg" alt="ظرف گل فلزی">
+                                <h3>ظرف گل فلزی</h3>
+                                <p class="price">۱,۲۰۰,۰۰۰ تومان</p>
+                                <div class="wishlist-actions">
+                                    <button class="add-to-cart">افزودن به سبد</button>
+                                    <button class="remove-wishlist">حذف</button>
+                                </div>
+                            </div>
+                            
+                            <div class="product-card">
+                                <img src="images/products/product6.jpg" alt="آینه دیواری فلزی">
+                                <h3>آینه دیواری فلزی</h3>
+                                <p class="price">۲,۸۰۰,۰۰۰ تومان</p>
+                                <div class="wishlist-actions">
+                                    <button class="add-to-cart">افزودن به سبد</button>
+                                    <button class="remove-wishlist">حذف</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- تب آدرس‌ها -->
+                    <div class="profile-tab" id="addresses-tab">
+                        <h2>آدرس‌های من</h2>
+                        
+                        <div class="addresses-list">
+                            <div class="address-card">
+                                <div class="address-info">
+                                    <h4>آدرس اصلی</h4>
+                                    <p>تهران، خیابان ولیعصر، پلاک ۱۲۳، واحد ۳</p>
+                                    <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+                                </div>
+                                <div class="address-actions">
+                                    <button class="edit-address">ویرایش</button>
+                                    <button class="delete-address">حذف</button>
+                                </div>
+                            </div>
+                            
+                            <div class="address-card">
+                                <div class="address-info">
+                                    <h4>آدرس کار</h4>
+                                    <p>تهران، بلوار میرداماد، پلاک ۴۵۶</p>
+                                    <p>تلفن: ۰۲۱-۸۷۶۵۴۳۲۱</p>
+                                </div>
+                                <div class="address-actions">
+                                    <button class="edit-address">ویرایش</button>
+                                    <button class="delete-address">حذف</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="add-address-btn">افزودن آدرس جدید</button>
+                    </div>
+
+                    <!-- تب تنظیمات حساب -->
+                    <div class="profile-tab" id="settings-tab">
+                        <h2>تنظیمات حساب</h2>
+                        
+                        <form class="settings-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">نام</label>
+                                    <input type="text" id="firstName" value="علی">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName">نام خانوادگی</label>
+                                    <input type="text" id="lastName" value="رضایی">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">ایمیل</label>
+                                <input type="email" id="email" value="ali.rezaei@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">شماره موبایل</label>
+                                <input type="tel" id="phone" value="۰۹۱۲-۳۴۵۶۷۸۹">
+                            </div>
+                            
+                            <button type="submit" class="save-settings">ذخیره تغییرات</button>
+                        </form>
+                        
+                        <div class="change-password">
+                            <h3>تغییر رمز عبور</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="currentPassword">رمز عبور فعلی</label>
+                                    <input type="password" id="currentPassword">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="newPassword">رمز عبور جدید</label>
+                                    <input type="password" id="newPassword">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="confirmPassword">تکرار رمز عبور جدید</label>
+                                    <input type="password" id="confirmPassword">
+                                </div>
+                                
+                                <button type="submit" class="change-password-btn">تغییر رمز عبور</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Persian Metal Art</h3>
+                    <p>فروشگاه تخصصی هنرهای فلزی ایرانی با بیش از ۷ سال سابقه هنری و صنعتی</p>
+                </div>
+                <div class="footer-section">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links-center">
+                        <li><a href="index.html">خانه</a></li>
+                        <li><a href="products.html">محصولات</a></li>
+                        <li><a href="categories.html">دسته‌بندی‌ها</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <p>تلفن: ۰۹۰۲-۹۶۴۴۰۵۲</p>
+                    <p>ایمیل: persianmetalart@gmail.com</p>
+                    <p>آدرس: لرستان، دورود</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Persian Metal Art. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // اسکریپت‌های خاص صفحه پروفایل
+        document.addEventListener('DOMContentLoaded', function() {
+            // مدیریت تب‌های پروفایل
+            const profileTabs = document.querySelectorAll('.profile-nav a');
+            const tabContents = document.querySelectorAll('.profile-tab');
+
+            profileTabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // حذف کلاس active از همه تب‌ها و لینک‌ها
+                    profileTabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // اضافه کردن کلاس active به تب انتخاب شده
+                    this.classList.add('active');
+                    
+                    // نمایش محتوای مربوطه
+                    const tabId = this.getAttribute('data-tab');
+                    const targetContent = document.getElementById(`${tabId}-tab`);
+                    if (targetContent) {
+                        targetContent.classList.add('active');
+                    }
+                });
+            });
+
+            // مدیریت دکمه‌های عملیات
+            const removeWishlistButtons = document.querySelectorAll('.remove-wishlist');
+            removeWishlistButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productCard = this.closest('.product-card');
+                    if (productCard) {
+                        if (confirm('آیا از حذف این محصول از علاقه‌مندی‌ها اطمینان دارید؟')) {
+                            productCard.style.opacity = '0';
+                            productCard.style.transform = 'translateX(100px)';
+                            setTimeout(() => {
+                                productCard.remove();
+                                alert('محصول از علاقه‌مندی‌ها حذف شد');
+                            }, 300);
+                        }
+                    }
+                });
+            });
+
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const originalText = this.textContent;
+                    this.textContent = '✓ اضافه شد!';
+                    this.style.background = '#27ae60';
+                    this.style.transform = 'scale(1.05)';
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.style.background = '#E6C34F';
+                        this.style.transform = 'scale(1)';
+                    }, 2000);
+                });
+            });
+
+            const editAvatarButton = document.querySelector('.edit-avatar');
+            if (editAvatarButton) {
+                editAvatarButton.addEventListener('click', function() {
+                    alert('در آینده، امکان آپلود آواتار اضافه خواهد شد.');
+                });
+            }
+
+            const saveSettingsForm = document.querySelector('.settings-form');
+            if (saveSettingsForm) {
+                saveSettingsForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('تغییرات با موفقیت ذخیره شد.');
+                });
+            }
+
+            const changePasswordForm = document.querySelector('.change-password form');
+            if (changePasswordForm) {
+                changePasswordForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const currentPass = document.getElementById('currentPassword').value;
+                    const newPass = document.getElementById('newPassword').value;
+                    const confirmPass = document.getElementById('confirmPassword').value;
+                    
+                    if (!currentPass || !newPass || !confirmPass) {
+                        alert('لطفاً تمامی فیلدها را پر کنید.');
+                        return;
+                    }
+                    
+                    if (newPass !== confirmPass) {
+                        alert('رمز عبور جدید و تکرار آن یکسان نیستند.');
+                        return;
+                    }
+                    
+                    alert('رمز عبور با موفقیت تغییر کرد.');
+                    this.reset();
+                });
+            }
+
+            const logoutLink = document.getElementById('logoutLink');
+            if (logoutLink) {
+                logoutLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    if (confirm('آیا از خروج از حساب کاربری اطمینان دارید؟')) {
+                        alert('خروج از حساب کاربری انجام شد.');
+                        window.location.href = 'index.html';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تکمیل خرید Persian Metal Art - اطلاعات گیرنده، روش ارسال، روش پرداخت">
+    <meta name="keywords" content="تکمیل خرید، پرداخت، ارسال، Persian Metal Art">
+    <title>تکمیل خرید - Persian Metal Art</title>
+    
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- هدر اصلی -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="لوگو Persian Metal Art" class="logo-img">
+                    <h1>Persian Metal Art</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="categories.html">دسته‌بندی‌ها</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="contact.html">تماس با ما</a></li>
+                    <li><a href="cart.html">سبد خرید (<span id="cart-count">0</span>)</a></li>
+                    <li class="user-menu">
+                        <div class="user-dropdown">
+                            <button class="user-btn" id="userBtn">
+                                <span id="userDisplayName">ورود / ثبت نام</span>
+                                <span class="user-icon">👤</span>
+                            </button>
+                            <div class="user-dropdown-content" id="userDropdown">
+                                <a href="login.html" id="loginLink">ورود به حساب</a>
+                                <a href="register.html">ثبت نام</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- بخش هدر صفحه تکمیل خرید -->
+    <section class="page-header compact">
+        <div class="container">
+            <h1>تکمیل خرید</h1>
+            <p>اطلاعات گیرنده، روش ارسال و پرداخت</p>
+        </div>
+    </section>
+
+    <!-- بخش تکمیل خرید -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-container">
+                <!-- فرم تکمیل خرید -->
+                <div class="checkout-form">
+                    <div class="form-step active" id="step1">
+                        <h2>اطلاعات گیرنده</h2>
+                        
+                        <div class="form-group">
+                            <label for="fullName">نام و نام خانوادگی *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">شماره موبایل *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">ایمیل</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">آدرس کامل *</label>
+                            <textarea id="address" name="address" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">شهر *</label>
+                                <select id="city" name="city" required>
+                                    <option value="">انتخاب شهر</option>
+                                    <option value="tehran">تهران</option>
+                                    <option value="mashhad">مشهد</option>
+                                    <option value="isfahan">اصفهان</option>
+                                    <option value="shiraz">شیراز</option>
+                                    <option value="tabriz">تبریز</option>
+                                    <option value="karaj">کرج</option>
+                                    <option value="ahvaz">اهواز</option>
+                                    <option value="kermanshah">کرمانشاه</option>
+                                    <option value="urmia">ارومیه</option>
+                                    <option value="rasht">رشت</option>
+                                    <option value="zahedan">زاهدان</option>
+                                    <option value="kerman">کرمان</option>
+                                    <option value="yazd">یزد</option>
+                                    <option value="bandarabbas">بندرعباس</option>
+                                    <option value="gorgan">گرگان</option>
+                                    <option value="sari">ساری</option>
+                                    <option value="qom">قم</option>
+                                    <option value="bojnord">بجنورد</option>
+                                    <option value="birjand">بیرجند</option>
+                                    <option value="dorood">دورود</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="postalCode">کد پستی *</label>
+                                <input type="text" id="postalCode" name="postalCode" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="saveAddress">
+                                <span>ذخیره این آدرس برای خریدهای بعدی</span>
+                            </label>
+                        </div>
+                        
+                        <button type="button" class="next-step" data-next="step2">مرحله بعدی</button>
+                    </div>
+                    
+                    <div class="form-step" id="step2">
+                        <h2>روش ارسال</h2>
+                        
+                        <div class="shipping-methods">
+                            <div class="shipping-option">
+                                <label class="radio-label">
+                                    <input type="radio" name="shipping" value="standard" checked>
+                                    <span class="radio-custom"></span>
+                                    <div class="shipping-info">
+                                        <h3>ارسال استاندارد</h3>
+                                        <p>تحویل در ۳-۵ روز کاری</p>
+                                        <span class="shipping-cost">۱۵۰,۰۰۰ تومان</span>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="shipping-option">
+                                <label class="radio-label">
+                                    <input type="radio" name="shipping" value="express">
+                                    <span class="radio-custom"></span>
+                                    <div class="shipping-info">
+                                        <h3>ارسال اکسپرس</h3>
+                                        <p>تحویل در ۱-۲ روز کاری</p>
+                                        <span class="shipping-cost">۳۰۰,۰۰۰ تومان</span>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="shipping-option">
+                                <label class="radio-label">
+                                    <input type="radio" name="shipping" value="pickup">
+                                    <span class="radio-custom"></span>
+                                    <div class="shipping-info">
+                                        <h3>تحویل حضوری</h3>
+                                        <p>در فروشگاه دورود</p>
+                                        <span class="shipping-cost">رایگان</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-navigation">
+                            <button type="button" class="prev-step" data-prev="step1">مرحله قبلی</button>
+                            <button type="button" class="next-step" data-next="step3">مرحله بعدی</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-step" id="step3">
+                        <h2>روش پرداخت</h2>
+                        
+                        <div class="payment-methods">
+                            <div class="payment-option">
+                                <label class="radio-label">
+                                    <input type="radio" name="payment" value="online" checked>
+                                    <span class="radio-custom"></span>
+                                    <div class="payment-info">
+                                        <h3>پرداخت آنلاین</h3>
+                                        <p>پرداخت از طریق درگاه بانکی</p>
+                                        <div class="payment-icons">
+                                            <span class="payment-icon">💳</span>
+                                            <span class="payment-icon">📱</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="payment-option">
+                                <label class="radio-label">
+                                    <input type="radio" name="payment" value="cash">
+                                    <span class="radio-custom"></span>
+                                    <div class="payment-info">
+                                        <h3>پرداخت نقدی</h3>
+                                        <p>پرداخت هنگام تحویل</p>
+                                        <div class="payment-icons">
+                                            <span class="payment-icon">💰</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="payment-option">
+                                <label class="radio-label">
+                                    <input type="radio" name="payment" value="installment">
+                                    <span class="radio-custom"></span>
+                                    <div class="payment-info">
+                                        <h3>پرداخت اقساطی</h3>
+                                        <p>پرداخت در ۳ قسط مساوی</p>
+                                        <div class="payment-icons">
+                                            <span class="payment-icon">📅</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="terms" required>
+                                <span>با <a href="#" class="terms-link">قوانین و شرایط</a> موافقم</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-navigation">
+                            <button type="button" class="prev-step" data-prev="step2">مرحله قبلی</button>
+                            <button type="submit" class="complete-order">تکمیل سفارش</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- خلاصه سفارش -->
+                <div class="order-summary">
+                    <div class="summary-box">
+                        <h2>خلاصه سفارش</h2>
+                        
+                        <div class="summary-items">
+                            <div class="summary-item">
+                                <div class="item-image">
+                                    <img src="images/products/product1.jpg" alt="مجسمه فلزی سنتی ایرانی">
+                                </div>
+                                <div class="item-details">
+                                    <h3>مجسمه فلزی سنتی ایرانی</h3>
+                                    <p>تعداد: 1</p>
+                                </div>
+                                <div class="item-price">۲,۵۰۰,۰۰۰ تومان</div>
+                            </div>
+                            
+                            <div class="summary-item">
+                                <div class="item-image">
+                                    <img src="images/products/product2.jpg" alt="ظرف تزئینی مسی">
+                                </div>
+                                <div class="item-details">
+                                    <h3>ظرف تزئینی مسی</h3>
+                                    <p>تعداد: 2</p>
+                                </div>
+                                <div class="item-price">۳,۶۰۰,۰۰۰ تومان</div>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-calculations">
+                            <div class="calculation-item">
+                                <span>جمع کل محصولات:</span>
+                                <span>۶,۱۰۰,۰۰۰ تومان</span>
+                            </div>
+                            
+                            <div class="calculation-item">
+                                <span>تخفیف:</span>
+                                <span class="discount-amount">-۵۰۰,۰۰۰ تومان</span>
+                            </div>
+                            
+                            <div class="calculation-item">
+                                <span>هزینه ارسال:</span>
+                                <span>۱۵۰,۰۰۰ تومان</span>
+                            </div>
+                            
+                            <div class="calculation-item total">
+                                <span>جمع کل:</span>
+                                <span class="total-amount">۵,۷۵۰,۰۰۰ تومان</span>
+                            </div>
+                        </div>
+                        
+                        <div class="promo-code-section">
+                            <div class="promo-code">
+                                <input type="text" placeholder="کد تخفیف" class="promo-input">
+                                <button class="apply-promo">اعمال</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Persian Metal Art</h3>
+                    <p>فروشگاه تخصصی هنرهای فلزی ایرانی با بیش از ۷ سال سابقه هنری و صنعتی</p>
+                </div>
+                <div class="footer-section">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links-center">
+                        <li><a href="index.html">خانه</a></li>
+                        <li><a href="products.html">محصولات</a></li>
+                        <li><a href="categories.html">دسته‌بندی‌ها</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <p>تلفن: ۰۹۰۲-۹۶۴۴۰۵۲</p>
+                    <p>ایمیل: persianmetalart@gmail.com</p>
+                    <p>آدرس: لرستان، دورود</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Persian Metal Art. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

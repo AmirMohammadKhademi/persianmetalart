@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تماس با Persian Metal Art - آدرس، تلفن، ایمیل و فرم تماس برای سفارش هنرهای فلزی ایرانی">
+    <meta name="keywords" content="تماس با ما، فرم تماس، آدرس فروشگاه، Persian Metal Art">
+    <title>تماس با ما - Persian Metal Art</title>
+    
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- هدر اصلی -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="لوگو Persian Metal Art" class="logo-img">
+                    <h1>Persian Metal Art</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="contact.html" class="active">تماس با ما</a></li>
+                    <li><a href="cart.html">سبد خرید (<span id="cart-count">0</span>)</a></li>
+                    <li class="user-menu">
+                        <div class="user-dropdown">
+                            <button class="user-btn" id="userBtn">
+                                <span id="userDisplayName">ورود / ثبت نام</span>
+                                <span class="user-icon">👤</span>
+                            </button>
+                            <div class="user-dropdown-content" id="userDropdown">
+                                <a href="login.html" id="loginLink">ورود به حساب</a>
+                                <a href="register.html">ثبت نام</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- بخش هدر صفحه تماس با ما -->
+    <section class="page-header compact">
+        <div class="container">
+            <h1>تماس با ما</h1>
+            <p>آماده‌ایم تا به سوالات شما پاسخ دهیم</p>
+        </div>
+    </section>
+
+    <!-- بخش اطلاعات تماس -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>آدرس</h3>
+                    <p>لرستان، دورود</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>تلفن</h3>
+                    <p>۰۹۰۲-۹۶۴۴۰۵۲</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>ایمیل</h3>
+                    <p>persianmetalart@gmail.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
+                    <h3>ساعات پاسخگویی</h3>
+                    <p>۹ صبح تا ۷ عصر</p>
+                    <p>شنبه تا پنجشنبه</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش فرم تماس -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>فرم تماس با ما</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">نام و نام خانوادگی *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">ایمیل *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">تلفن</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">موضوع *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">انتخاب موضوع</option>
+                            <option value="order">سفارش محصول</option>
+                            <option value="info">اطلاعات محصول</option>
+                            <option value="complaint">شکایت و نظر</option>
+                            <option value="cooperation">همکاری</option>
+                            <option value="other">سایر</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">پیام شما *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="privacy" required>
+                            <span>با <a href="#" class="privacy-link">قوانین حریم خصوصی</a> موافقم</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">ارسال پیام</button>
+                </form>
+            </div>
+            
+            <div class="map-container">
+                <h3>موقعیت ما روی نقشه</h3>
+                <div class="map-placeholder">
+                    <img src="images/contact/map.jpg" alt="نقشه موقعیت Persian Metal Art در دورود">
+                    <div class="map-overlay">
+                        <p>📍 Persian Metal Art</p>
+                        <p>لرستان، دورود</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش سوالات متداول -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>سوالات متداول</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>چقدر طول می‌کشه تا سفارش من آماده بشه؟</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>زمان کار بسته به سفارش شماست. در صورت موجود بودن محصول، ۳ تا ۵ روز کاری طول می‌کشد تا به دست شما برسد. در غیر این صورت، بسته به نوع کار، زمان بیشتری برای آماده‌سازی نیاز است.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هزینه ارسال چقدر هست؟</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>برای سفارشات بالای ۸ میلیون تومان، ارسال رایگان است. برای سفارشات کمتر، هزینه ارسال بر اساس مبلغ و محل تحویل محاسبه می‌شود.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>آیا می‌تونم محصولات رو به صورت حضوری ببینم؟</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>بله، امکان دیدن و خرید محصولات از نزدیک در شهر دورود وجود دارد. پیشنهاد می‌کنیم قبل از مراجعه تماس بگیرید.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>گارانتی محصولات چقدر هست؟</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>تمامی محصولات ما دارای گارانتی ۱۲ ماهه هستند. در صورت وجود هرگونه نقص فنی یا آسیب دیدگی، می‌توانید محصول را برای تعمیر یا تعویض به ما بازگردانید.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش تماس سریع -->
+    <section class="quick-contact">
+        <div class="container">
+            <h2>هنوز سوالی دارید؟</h2>
+            <p>با ما تماس بگیرید یا فرم بالا را پر کنید</p>
+            <div class="contact-buttons">
+                <a href="tel:09029644052" class="cta-button">تماس تلفنی</a>
+                <a href="https://t.me/Amir_m_khademi" class="telegram-button" target="_blank">تلگرام</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر - مشترک برای همه صفحات -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Persian Metal Art</h3>
+                <p>فروشگاه تخصصی هنرهای فلزی ایرانی با بیش از ۷ سال سابقه هنری و صنعتی</p>
+            </div>
+            <div class="footer-section">
+                <h3>لینک‌های سریع</h3>
+                <ul class="footer-links-center">
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="contact.html">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>تماس با ما</h3>
+                <p>تلفن: ۰۹۰۲-۹۶۴۴۰۵۲</p>
+                <p>ایمیل: persianmetalart@gmail.com</p>
+                <p>آدرس: لرستان، دورود</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Persian Metal Art. تمامی حقوق محفوظ است.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

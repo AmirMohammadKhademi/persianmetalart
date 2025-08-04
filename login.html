@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ورود / ثبت نام در Persian Metal Art - حساب کاربری شما">
+    <meta name="keywords" content="ورود، ثبت نام، حساب کاربری، Persian Metal Art">
+    <title>ورود / ثبت نام - Persian Metal Art</title>
+    
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-body">
+    <!-- هدر اصلی -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="لوگو Persian Metal Art" class="logo-img">
+                    <h1>Persian Metal Art</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="categories.html">دسته‌بندی‌ها</a></li>
+                    <li><a href="about.html">درباره ما</a></li>
+                    <li><a href="contact.html">تماس با ما</a></li>
+                    <li><a href="cart.html">سبد خرید (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- بخش ورود/ثبت نام -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-intro">
+                    <div class="intro-content">
+                        <h1>به Persian Metal Art خوش آمدید</h1>
+                        <p>با عضویت در سایت ما، از تخفیف‌های ویژه و خدمات اختصاصی بهره‌مند شوید</p>
+                        <div class="intro-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">🎁</div>
+                                <span>تخفیف‌های ویژه اعضا</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🚚</div>
+                                <span>ارسال رایگان</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">❤️</div>
+                                <span>لیست علاقه‌مندی‌ها</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">📦</div>
+                                <span>پیگیری سفارشات</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="auth-forms">
+                    <div class="form-switcher">
+                        <button class="switch-btn active" data-form="login">ورود</button>
+                        <button class="switch-btn" data-form="register">ثبت نام</button>
+                        <div class="switch-indicator"></div>
+                    </div>
+                    
+                    <!-- فرم ورود -->
+                    <div class="auth-form login-form active" id="loginForm">
+                        <h2>ورود به حساب</h2>
+                        <form id="loginFormSubmit">
+                            <div class="form-group">
+                                <label for="loginEmail">ایمیل یا شماره موبایل</label>
+                                <input type="text" id="loginEmail" placeholder="ایمیل یا شماره موبایل خود را وارد کنید" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="loginPassword">رمز عبور</label>
+                                <div class="password-input">
+                                    <input type="password" id="loginPassword" placeholder="رمز عبور خود را وارد کنید" required>
+                                    <span class="toggle-password" data-target="loginPassword">👁️</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="rememberMe">
+                                    <span>مرا به خاطر بسپار</span>
+                                </label>
+                                <a href="#" class="forgot-password">رمز عبور را فراموش کردم</a>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">ورود</button>
+                            
+                            <div class="social-login">
+                                <p>یا ورود با:</p>
+                                <div class="social-buttons">
+                                    <button type="button" class="social-btn google">G</button>
+                                    <button type="button" class="social-btn facebook">f</button>
+                                    <button type="button" class="social-btn telegram">T</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- فرم ثبت نام -->
+                    <div class="auth-form register-form" id="registerForm">
+                        <h2>ثبت نام در سایت</h2>
+                        <form id="registerFormSubmit">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">نام</label>
+                                    <input type="text" id="firstName" placeholder="نام خود را وارد کنید" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName">نام خانوادگی</label>
+                                    <input type="text" id="lastName" placeholder="نام خانوادگی خود را وارد کنید" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="registerEmail">ایمیل</label>
+                                <input type="email" id="registerEmail" placeholder="ایمیل خود را وارد کنید" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="registerPhone">شماره موبایل</label>
+                                <input type="tel" id="registerPhone" placeholder="شماره موبایل خود را وارد کنید" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="registerPassword">رمز عبور</label>
+                                    <div class="password-input">
+                                        <input type="password" id="registerPassword" placeholder="رمز عبور خود را وارد کنید" required>
+                                        <span class="toggle-password" data-target="registerPassword">👁️</span>
+                                    </div>
+                                    <div class="password-strength">
+                                        <div class="strength-bar">
+                                            <div class="strength-fill" id="strengthFill"></div>
+                                        </div>
+                                        <span class="strength-text" id="strengthText">ضعیف</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="confirmPassword">تکرار رمز عبور</label>
+                                    <div class="password-input">
+                                        <input type="password" id="confirmPassword" placeholder="رمز عبور را مجدداً وارد کنید" required>
+                                        <span class="toggle-password" data-target="confirmPassword">👁️</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="terms" required>
+                                    <span>با <a href="#" class="terms-link">قوانین و شرایط</a> موافقم</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">ثبت نام</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Persian Metal Art</h3>
+                    <p>فروشگاه تخصصی هنرهای فلزی ایرانی با بیش از ۷ سال سابقه هنری و صنعتی</p>
+                </div>
+                <div class="footer-section">
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links-center">
+                        <li><a href="index.html">خانه</a></li>
+                        <li><a href="products.html">محصولات</a></li>
+                        <li><a href="categories.html">دسته‌بندی‌ها</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <p>تلفن: ۰۹۰۲-۹۶۴۴۰۵۲</p>
+                    <p>ایمیل: persianmetalart@gmail.com</p>
+                    <p>آدرس: لرستان، دورود</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Persian Metal Art. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
